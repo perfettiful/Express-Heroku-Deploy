@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+app.use(express.json({}));
+
 app.use(express.static('public'));
 
 // GET Route for homepage
@@ -25,19 +27,16 @@ app.get("/api/cars", (req, res) => {
 app.post("/api/cars", (req, res) => {
 
   console.log(req.body);
-  if (req.body && req.body.carMake) {
+
+  if (req.body) {
 
       const { carMake, carModel, carYear } = req.body;
 
       res.json(`ADDED A CAR ${carYear} ${carMake}, ${carModel}`)
-
-
   }
   else {
       res.json("NO CAR ADDED")
   }
-
-  res.json(`${req.method} was used on api/cars!`)
 
 })
 
@@ -49,12 +48,8 @@ app.delete("/api/cars", (req, res) => {
   res.json(`${req.method} was used on api/cars!`)
 })
 
-
-
 app.get("*", (req, res) => {
   res.status(404).send("404 NOTHING HERE!")
 })
-
-
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
