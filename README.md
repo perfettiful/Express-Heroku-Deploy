@@ -1,4 +1,6 @@
-# Express JS Server Deployment To Heroku
+<center>
+<h1>  Express JS Server Deployment To Heroku </h1>
+</center>
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
@@ -9,31 +11,34 @@ See further examples on Heroku's Devcenter Node Getting started [article](https:
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
 ```sh
-$ git clone https://github.com/perfettiful/Express-Heroku-Deploy.git 
+ git clone https://github.com/perfettiful/Express-Heroku-Deploy.git 
 ```
+```sh
+ cd Express-Heroku-Deploy
 ```
-$ cd Express-Heroku-Deploy
-```
-```
-$ npm install && npm start
+```sh
+ npm install && npm start
 ```
 
 Your app should now be running on [localhost:3001](http://localhost:3001/).
 
 ## Deploying to Heroku
 
+```sh
+ heroku create
 ```
-$ heroku create
+```sh
+ git push heroku main
 ```
+```sh
+ heroku open
 ```
-$ git push heroku main
-```
-```
-$ heroku open
-```
-or
+<center>
+
+OR
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+</center>
 
 ## Documentation
 
