@@ -1,6 +1,6 @@
-<center>
-<h1>  Express JS Server Deployment To Heroku </h1>
-</center>
+
+<h1 align="center"> 🚀 Express JS Server Deployment To Heroku 🚀</h1>
+
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
@@ -33,12 +33,12 @@ Your app should now be running on [localhost:3001](http://localhost:3001/).
 ```sh
  heroku open
 ```
-<center>
+<div align="center">
 
 OR
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-</center>
+</div>
 
 ## Documentation
 
